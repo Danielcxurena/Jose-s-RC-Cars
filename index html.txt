@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom RC Cars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Custom RC Cars</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Custom RC Cars</h2>
+        <p>We specialize in creating custom RC cars tailored to your specific needs and preferences. Explore our gallery to see some of our latest creations, and get in touch with us to discuss your custom RC car project.</p>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="car1.jpg" alt="RC Car 1">
+                <p>Description of RC Car 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="car2.jpg" alt="RC Car 2">
+                <p>Description of RC Car 2</p>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="https://formspree.io/YOUREMAIL@example.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            
+            <label for="message">Custom Request:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Custom RC Cars</p>
+    </footer>
+</body>
+</html>

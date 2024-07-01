@@ -1,3 +1,4 @@
+/* Existing styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +14,7 @@ header {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
 nav ul {
@@ -32,6 +33,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Other existing styles */
 .hero {
     background-image: url('hero-image.jpg');
     background-size: cover;

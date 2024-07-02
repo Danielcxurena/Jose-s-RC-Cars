@@ -5,13 +5,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
+    background-image: url('https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/file-JNkOKw7qAcLopGe58aPJgdy.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: #ffffff; /* White text */
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #000000; /* Dark background for header */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for header with 90% transparency */
     color: #fff; /* White text */
     padding: 1rem 0;
     text-align: center;
@@ -55,9 +58,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(30, 30, 30, 0.9); /* Dark background with 90% transparency */
     padding: 4rem 1rem; /* Add padding to the sides */
     color: #fff;
     text-align: center;
@@ -66,9 +67,9 @@ nav ul li a:hover {
 }
 
 section {
+    background-color: rgba(30, 30, 30, 0.9); /* Slightly lighter dark background with 90% transparency */
     padding: 2rem 1rem; /* Add padding to the sides */
     margin: 1rem 0;
-    background-color: #1e1e1e; /* Slightly lighter dark background for sections */
     border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
@@ -129,9 +130,9 @@ form button:hover {
 }
 
 footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background with 90% transparency */
     text-align: center;
     padding: 1rem 0;
-    background-color: #000; /* Dark background for footer */
     color: #fff; /* White text for footer */
 }
 

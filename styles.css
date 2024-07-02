@@ -91,6 +91,10 @@ section {
     border-radius: 8px;
 }
 
+.gallery-item p {
+    font-family: 'MedievalSharp', cursive;
+}
+
 form {
     display: flex;
     flex-direction: column;

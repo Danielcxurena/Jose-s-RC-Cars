@@ -95,6 +95,10 @@ section {
     font-family: 'MedievalSharp', cursive; /* Apply MedievalSharp font to model names */
 }
 
+.gallery-item .price {
+    text-decoration: underline; /* Underline the price */
+}
+
 form {
     display: flex;
     flex-direction: column;

@@ -35,16 +35,16 @@ nav ul {
     display: flex;
     justify-content: center;
     margin: 0; /* Remove default margin */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.5rem; /* Reduce margin to fit items on the screen */
 }
 
 nav ul li a {
     color: #fff; /* White text for links */
     text-decoration: none;
+    padding: 0.5rem; /* Reduce padding to fit items on the screen */
 }
 
 nav ul li a:hover {
@@ -130,11 +130,16 @@ iframe {
 /* Media query for small screens */
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center; /* Center align the items */
+        justify-content: space-between; /* Ensure items are evenly spaced */
+        flex-wrap: nowrap; /* Prevent items from wrapping */
     }
 
     nav ul li {
-        margin: 0.5rem 0; /* Add some space between items */
+        margin: 0 0.2rem; /* Further reduce margin to fit items on the screen */
+    }
+
+    nav ul li a {
+        padding: 0.2rem; /* Further reduce padding to fit items on the screen */
+        font-size: 0.9rem; /* Adjust font size for better fit */
     }
 }

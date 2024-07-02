@@ -1,20 +1,29 @@
-/* Existing styles */
+/* Import the Gothic font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212;
+    color: #ffffff;
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensures it stays on top of other elements */
+    font-family: 'MedievalSharp', cursive;
+}
+
+header h1 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2.5rem;
 }
 
 nav ul {
@@ -33,7 +42,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Other existing styles */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .hero {
     background-image: url('hero-image.jpg');
     background-size: cover;
@@ -46,7 +58,7 @@ nav ul li a {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background-color: #fff;
+    background-color: #1e1e1e;
     border-radius: 8px;
     width: 100%;
 }
@@ -92,7 +104,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
 

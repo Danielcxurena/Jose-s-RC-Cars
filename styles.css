@@ -5,14 +5,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #785b78; /* Muted Purple */
     color: #ffffff;
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #000000;
-    color: #fff;
+    background-color: #44191b; /* Dark Burgundy */
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
     position: sticky;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -51,14 +51,14 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     padding: 4rem 0;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
 }
 
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background-color: #1e1e1e;
+    background-color: #433d5f; /* Dark Blue-Purple */
     border-radius: 8px;
     width: 100%;
 }
@@ -90,22 +90,22 @@ form label, form input, form textarea, form button {
 }
 
 form button {
-    background-color: #333;
-    color: #fff;
+    background-color: #44191b; /* Dark Burgundy */
+    color: #ffffff;
     border: none;
     padding: 0.5rem;
     border-radius: 4px;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #6e3737; /* Dark Reddish Brown */
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #44191b; /* Dark Burgundy */
+    color: #ffffff;
 }
 
 iframe {

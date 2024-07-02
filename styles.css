@@ -5,14 +5,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #000000;
-    color: #fff;
+    background-color: #000000; /* Dark background for header */
+    color: #fff; /* White text */
     padding: 1rem 0;
     text-align: center;
     position: sticky;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* White text for links */
     text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ nav ul li a:hover {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* Slightly lighter dark background for sections */
     border-radius: 8px;
     width: 100%;
 }
@@ -89,23 +89,31 @@ form label, form input, form textarea, form button {
     margin: 0.5rem 0;
 }
 
+form input, form textarea {
+    background-color: #333; /* Dark background for input fields */
+    color: #fff; /* White text for input fields */
+    border: 1px solid #555; /* Border color */
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
 form button {
-    background-color: #333;
-    color: #fff;
+    background-color: #555; /* Slightly lighter background for button */
+    color: #fff; /* White text for button */
     border: none;
     padding: 0.5rem;
     border-radius: 4px;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #777; /* Lighter color on hover */
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Dark background for footer */
+    color: #fff; /* White text for footer */
 }
 
 iframe {

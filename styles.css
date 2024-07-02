@@ -36,6 +36,8 @@ nav ul {
     justify-content: center;
     margin: 0; /* Remove default margin */
     flex-wrap: wrap; /* Allow items to wrap if necessary */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav ul li {
@@ -56,17 +58,20 @@ nav ul li a:hover {
     background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
-    padding: 4rem 0;
+    padding: 4rem 1rem; /* Add padding to the sides */
     color: #fff;
     text-align: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 section {
-    padding: 2rem;
+    padding: 2rem 1rem; /* Add padding to the sides */
     margin: 1rem 0;
     background-color: #1e1e1e; /* Slightly lighter dark background for sections */
     border-radius: 8px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery-container {

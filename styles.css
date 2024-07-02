@@ -162,4 +162,6 @@ iframe {
     }
 
     .gallery-item img {
-        width: 100%; /* Ensure images fit screen width on small dev
+        width: 100%; /* Ensure images fit screen width on small devices */
+    }
+}

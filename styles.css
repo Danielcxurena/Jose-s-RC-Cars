@@ -91,8 +91,8 @@ section {
     border-radius: 8px;
 }
 
-.gallery-item p {
-    font-family: 'MedievalSharp', cursive; /* Apply MedievalSharp font to gallery text */
+.gallery-item .model-name {
+    font-family: 'MedievalSharp', cursive; /* Apply MedievalSharp font to model names */
 }
 
 form {

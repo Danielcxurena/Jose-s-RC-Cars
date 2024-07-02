@@ -86,8 +86,8 @@ section {
 }
 
 .gallery-item img {
-    width: 300px;
-    height: 200px;
+    width: 400px; /* Increase width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
 }
 
@@ -150,5 +150,9 @@ iframe {
 
     header h1 {
         font-size: 2rem; /* Adjust header font size for better fit on small screens */
+    }
+
+    .gallery-item img {
+        width: 100%; /* Ensure images fit screen width on small devices */
     }
 }

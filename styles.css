@@ -92,7 +92,7 @@ section {
 }
 
 .gallery-item p {
-    font-family: 'MedievalSharp', cursive;
+    font-family: 'MedievalSharp', cursive; /* Apply MedievalSharp font to gallery text */
 }
 
 form {

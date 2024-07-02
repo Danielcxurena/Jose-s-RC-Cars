@@ -5,13 +5,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #785b78; /* Muted Purple */
+    background-color: #121212;
     color: #ffffff;
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #44191b; /* Dark Burgundy */
+    background-color: #000000;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -58,10 +58,9 @@ nav ul li a:hover {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background-color: #433d5f; /* Dark Blue-Purple */
+    background-color: #1e1e1e;
     border-radius: 8px;
     width: 100%;
-    color: #c1bec8; /* Light Gray */
 }
 
 .gallery-container {
@@ -90,16 +89,8 @@ form label, form input, form textarea, form button {
     margin: 0.5rem 0;
 }
 
-form input, form textarea {
-    background-color: #9a94a6; /* Light Grayish Purple */
-    color: #000;
-    border: 1px solid #6e3737; /* Dark Reddish Brown */
-    border-radius: 4px;
-    padding: 0.5rem;
-}
-
 form button {
-    background-color: #44191b; /* Dark Burgundy */
+    background-color: #333;
     color: #fff;
     border: none;
     padding: 0.5rem;
@@ -107,13 +98,13 @@ form button {
 }
 
 form button:hover {
-    background-color: #6e3737; /* Dark Reddish Brown */
+    background-color: #555;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #44191b; /* Dark Burgundy */
+    background-color: #000;
     color: #fff;
 }
 

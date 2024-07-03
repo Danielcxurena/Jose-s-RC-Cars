@@ -142,6 +142,23 @@ iframe {
     border: none;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: #fff; /* White color for the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
 /* Media query for small screens */
 @media (max-width: 600px) {
     nav ul {

@@ -28,7 +28,7 @@ header {
 
 header h1 {
     font-family: 'MedievalSharp', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjust header font size */
     margin: 0; /* Remove default margin */
 }
 
@@ -51,6 +51,7 @@ nav ul li a {
     color: #fff; /* White text for links */
     text-decoration: none;
     padding: 0.5rem; /* Reduce padding to fit items on the screen */
+    font-size: 1rem; /* Adjust font size */
 }
 
 nav ul li a:hover {
@@ -87,7 +88,8 @@ section {
 }
 
 .gallery-item img {
-    width: 400px; /* Increase width */
+    width: 100%; /* Ensure images fit screen width on small devices */
+    max-width: 400px; /* Set a maximum width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
 }

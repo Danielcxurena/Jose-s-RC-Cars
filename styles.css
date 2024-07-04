@@ -171,14 +171,5 @@ iframe {
 
     nav ul li a {
         padding: 0.2rem; /* Further reduce padding to fit items on the screen */
-        font-size: 0.9rem; /* Adjust font size for better fit */
-    }
-
-    header h1 {
-        font-size: 2rem; /* Adjust header font size for better fit on small screens */
-    }
-
-    .gallery-item img {
-        width: 100%; /* Ensure images fit screen width on small devices */
     }
 }

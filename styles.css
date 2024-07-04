@@ -155,7 +155,7 @@ iframe {
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.social-media a:hover {
+social-media a:hover {
     color: #007bff; /* Change color on hover */
 }
 

@@ -1,184 +1,94 @@
-/* Import the Gothic font */
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/file-JNkOKw7qAcLopGe58aPJjqdy.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #ffffff; /* White text */
-    scroll-behavior: smooth;
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background for header with 90% transparency */
-    color: #fff; /* White text */
-    padding: 1rem 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensures it stays on top of other elements */
-    font-family: 'MedievalSharp', cursive;
-    width: 100%; /* Ensure it spans the full width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-header h1 {
-    font-family: 'MedievalSharp', cursive;
-    font-size: 2.5rem;
-    margin: 0; /* Remove default margin */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0; /* Remove default margin */
-    flex-wrap: wrap; /* Allow items to wrap if necessary */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-nav ul li {
-    margin: 0 0.5rem; /* Reduce margin to fit items on the screen */
-}
-
-nav ul li a {
-    color: #fff; /* White text for links */
-    text-decoration: none;
-    padding: 0.5rem; /* Reduce padding to fit items on the screen */
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    background-color: rgba(30, 30, 30, 0.9); /* Dark background with 90% transparency */
-    padding: 4rem 1rem; /* Add padding to the sides */
-    color: #fff;
-    text-align: center;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-section {
-    background-color: rgba(30, 30, 30, 0.9); /* Slightly lighter dark background with 90% transparency */
-    padding: 2rem 1rem; /* Add padding to the sides */
-    margin: 1rem 0;
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery-item {
-    margin: 1rem;
-    text-align: center;
-}
-
-.gallery-item img {
-    width: 400px; /* Increase width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-}
-
-.gallery-item .model-name {
-    font-family: 'MedievalSharp', cursive; /* Apply MedievalSharp font to model names */
-}
-
-.gallery-item .price {
-    text-decoration: underline; /* Underline the price */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label, form input, form textarea, form button {
-    margin: 0.5rem 0;
-}
-
-form input, form textarea {
-    background-color: #333; /* Dark background for input fields */
-    color: #fff; /* White text for input fields */
-    border: 1px solid #555; /* Border color */
-    border-radius: 4px;
-    padding: 0.5rem;
-}
-
-form button {
-    background-color: #555; /* Slightly lighter background for button */
-    color: #fff; /* White text for button */
-    border: none;
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-
-form button:hover {
-    background-color: #777; /* Lighter color on hover */
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background with 90% transparency */
-    text-align: center;
-    padding: 1rem 0;
-    color: #fff; /* White text for footer */
-}
-
-iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-}
-
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-media a {
-    color: #fff; /* White color for the icons */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.social-media a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-/* Media query for small screens */
-@media (max-width: 600px) {
-    nav ul {
-        justify-content: space-around; /* Ensure items are evenly spaced */
-    }
-
-    nav ul li {
-        margin: 0 0.2rem; /* Further reduce margin to fit items on the screen */
-    }
-
-    nav ul li a {
-        padding: 0.2rem; /* Further reduce padding to fit items on the screen */
-        font-size: 0.9rem; /* Adjust font size for better fit */
-    }
-
-    header h1 {
-        font-size: 2rem; /* Adjust header font size for better fit on small screens */
-    }
-
-    .gallery-item img {
-        width: 100%; /* Ensure images fit screen width on small devices */
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Silva's Custom RCs specializes in creating custom RC cars tailored to your specific needs and preferences. Explore our gallery to see some of our latest creations, and get in touch with us to discuss your custom RC car project.">
+    <meta name="keywords" content="custom RC cars, RC cars, Silva's Custom RCs, RC car gallery, custom RC projects">
+    <meta name="author" content="Silva's Custom RCs">
+    <title>Silva's Custom RCs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Silva's Custom RCs</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Welcome to Silva's Custom RCs</h2>
+        <p>We specialize in creating custom RC cars tailored to your specific needs and preferences. Explore our gallery to see some of our latest creations, and get in touch with us to discuss your custom RC car project.</p>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/302092764_10160647026044684_1325019668249462331_n_1080x.jpg" alt="1959 Chevrolet Impala - Classic Edition">
+                <p class="model-name">1959 Chevrolet Impala - Classic Edition</p>
+                <p>Estimated cost around <span class="price">$559.99</span></p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/MC_P_S6_940x.jpg" alt="1979 Chevrolet Monte Carlo">
+                <p class="model-name">1979 Chevrolet Monte Carlo</p>
+                <p>Estimated cost around <span class="price">$559.99</span></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Customer testimonials go here.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about your company, your process, and your team.</p>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100042158983002&mibextid=ZbWKwL">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/silvascustomrcs?igshid=Zmh3ZHZzcWl1MG91" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.tiktok.com/@silvascustomrcs?_t=8nhPVBsaixG&_r=1" target="_blank">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/xzzpppwk" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Custom Request:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Silva's Custom RCs</p>
+    </footer>
+</body>
+</html>

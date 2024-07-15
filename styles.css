@@ -90,6 +90,7 @@ section {
     width: 400px; /* Increase width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .gallery-item .model-name {

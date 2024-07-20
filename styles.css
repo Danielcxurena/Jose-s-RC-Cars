@@ -24,6 +24,13 @@ header {
     font-family: 'MedievalSharp', cursive;
     width: 100%; /* Ensure it spans the full width */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-container {
+    transition: all 0.5s ease; /* Smooth transition for hiding */
 }
 
 header h1 {
@@ -135,6 +142,10 @@ footer {
     text-align: center;
     padding: 1rem 0;
     color: #fff; /* White text for footer */
+}
+
+#footer-logo-container {
+    margin-bottom: 1rem; /* Space between logo and text */
 }
 
 iframe {

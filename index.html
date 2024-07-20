@@ -10,10 +10,28 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Structured Data for Google Search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Silva's Custom RCs",
+        "url": "https://silvascustomrcs.com",
+        "logo": "https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/lowrider.pdf%20(1).png",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=100042158983002&mibextid=ZbWKwL",
+            "https://www.instagram.com/silvascustomrcs?igshid=Zmh3ZHZzcWl1MG91",
+            "https://www.tiktok.com/@silvascustomrcs?_t=8nhPVBsaixG&_r=1"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/lowrider.pdf%20(1).png" alt="Silva's Custom RCs Logo" style="max-width: 100px; height: auto;">
+    <header id="main-header">
+        <div id="logo-container">
+            <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/lowrider.pdf%20(1).png" alt="Silva's Custom RCs Logo" style="max-width: 100px; height: auto;">
+        </div>
         <h1>Silva's Custom RCs</h1>
         <nav>
             <ul>
@@ -105,6 +123,9 @@
     </section>
     
     <footer>
+        <div id="footer-logo-container">
+            <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/lowrider.pdf%20(1).png" alt="Silva's Custom RCs Logo" style="max-width: 100px; height: auto;">
+        </div>
         <p>&copy; 2024 Silva's Custom RCs<br>Fresno, CA, 93650</p>
     </footer>
     
@@ -120,6 +141,16 @@
         interiorImage.addEventListener('click', function() {
             currentIndex = (currentIndex + 1) % images.length;
             interiorImage.src = images[currentIndex];
+        });
+
+        window.addEventListener('scroll', function() {
+            const logoContainer = document.getElementById('logo-container');
+            const header = document.getElementById('main-header');
+            if (window.scrollY > header.offsetHeight) {
+                logoContainer.style.display = 'none';
+            } else {
+                logoContainer.style.display = 'block';
+            }
         });
     </script>
 </body>

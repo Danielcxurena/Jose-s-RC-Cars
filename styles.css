@@ -158,6 +158,33 @@ social-media a:hover {
     color: #007bff;
 }
 
+.instagram-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.instagram-post {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.instagram-post img {
+    width: 100%;
+    height: auto;
+}
+
+.instagram-post p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
 @media (max-width: 600px) {
     nav ul {
         justify-content: space-around;

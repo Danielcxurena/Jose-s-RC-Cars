@@ -51,30 +51,42 @@
     <section id="gallery">
         <h2>Gallery</h2>
         <h3>Exteriors</h3>
-        <p class="section-subtitle">- Custom airbrush bodies starting at $500</p>
+        <p class="section-subtitle">- Custom airbrush bodies starting at $400</p>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/302092764_10160647026044684_1325019668249462331_n_1080x%20.webp" alt="1959 Chevrolet Impala - Classic Edition">
-                <p class="model-name">1959 Chevrolet Impala - Classic Edition</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/MC_P_S6_940x.webp" alt="1979 Chevrolet Monte Carlo">
-                <p class="model-name">1979 Chevrolet Monte Carlo</p>
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/Zapata79Monte20231231_161646.webp" alt="1979 Chevrolet Monte Carlo - Atila del Sur" class="exterior-image" id="zapata79monte-1">
+                <p class="model-name">1979 Chevrolet Monte Carlo - Atila del Sur</p>
             </div>
         </div>
         <h3>Interiors</h3>
         <p class="section-subtitle">- Custom interior designs starting at $200</p>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_132554%20(1).webp" alt="Interior of 1964 Chevrolet Impala" class="interior-image">
-                <p class="model-name">1964 Chevrolet Impala - Interior</p>
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_132554%20(1).webp" alt="1964 Chevrolet Impala - Red Velvet Gold" class="interior-image" id="red-velvet-gold">
+                <p class="model-name">1964 Chevrolet Impala - Red Velvet Gold</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/pink79monte20240523_140303.webp" alt="1979 Chevrolet Monte Carlo - Pink Velvet Gold" class="interior-image" id="pink79monte-1">
+                <p class="model-name">1979 Chevrolet Monte Carlo - Pink Velvet Gold</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/brown64impala20240426_181232.webp" alt="1964 Chevrolet Impala - Café Gold" class="interior-image" id="brown64impala-1">
+                <p class="model-name">1964 Chevrolet Impala - Café Gold</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/blue64impala20240511_065046.webp" alt="1964 Chevrolet Impala - Blue Gold" class="interior-image" id="blue64impala-1">
+                <p class="model-name">1964 Chevrolet Impala - Aqua Gold</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/black64impala20240720_223631.webp" alt="1964 Chevrolet Impala - Black Gold" class="interior-image" id="black64impala-1">
+                <p class="model-name">1964 Chevrolet Impala - Black Gold</p>
             </div>
         </div>
     </section>
     
     <section id="testimonials">
         <h2>Testimonials</h2>
-        <p>Customer testimonials go here.</p>
+        <div id="instagram-posts" class="instagram-posts"></div>
     </section>
     
     <section id="about">
@@ -127,17 +139,46 @@
     </footer>
     
     <script>
-        const interiorImage = document.querySelector('.interior-image');
-        const images = [
-            'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_132554%20(1).webp',
-            'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_133241%20(1).webp',
-            'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_133258%20(1).webp'
-        ];
-        let currentIndex = 0;
+        const interiorImages = {
+            'red-velvet-gold': [
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_132554%20(1).webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_133241%20(1).webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/20240520_133258%20(1).webp'
+            ],
+            'pink79monte-1': [
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/pink79monte20240523_140303.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/pink79monte20240523_140156.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/pink79monte20240523_140326.webp'
+            ],
+            'brown64impala-1': [
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/brown64impala20240426_181232.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/brown64impala20240426_181256.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/Brown64Impala20240426_181428.webp'
+            ],
+            'blue64impala-1': [
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/blue64impala20240511_065046.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/blue64impala20240511_064858.webp'
+            ],
+            'black64impala-1': [
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/black64impala20240720_223631.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/black64impala20240720_223838.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/black64impala20240720_224053.webp'
+            ],
+            'zapata79monte-1': [
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/Zapata79Monte20231231_161646.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/Zapata79Monte20231231_162345.webp',
+                'https://raw.githubusercontent.com/Danielcxurena/Jose-s-RC-Cars/main/Zapata79Monte20231231_162328.webp'
+            ]
+        };
 
-        interiorImage.addEventListener('click', function() {
-            currentIndex = (currentIndex + 1) % images.length;
-            interiorImage.src = images[currentIndex];
+        document.querySelectorAll('.interior-image, .exterior-image').forEach(img => {
+            img.addEventListener('click', function() {
+                const imgId = this.id;
+                const currentImages = interiorImages[imgId];
+                let currentIndex = currentImages.indexOf(this.src);
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                this.src = currentImages[currentIndex];
+            });
         });
 
         window.addEventListener('scroll', function() {
@@ -149,6 +190,34 @@
                 logoContainer.style.display = 'block';
             }
         });
+
+        async function fetchInstagramPosts() {
+            const accessToken = 'YOUR_ACCESS_TOKEN'; // Replace with your actual Instagram Graph API access token
+            const userId = 'YOUR_USER_ID'; // Replace with your Instagram user ID
+            const url = `https://graph.instagram.com/${userId}/tags?fields=id,caption,media_url,permalink&access_token=${accessToken}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const postsContainer = document.getElementById('instagram-posts');
+
+                data.data.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('instagram-post');
+                    postElement.innerHTML = `
+                        <a href="${post.permalink}" target="_blank">
+                            <img src="${post.media_url}" alt="${post.caption}">
+                        </a>
+                        <p>${post.caption}</p>
+                    `;
+                    postsContainer.appendChild(postElement);
+                });
+            } catch (error) {
+                console.error('Error fetching Instagram posts:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchInstagramPosts);
     </script>
 </body>
 </html>
